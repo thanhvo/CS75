@@ -6,55 +6,96 @@
     
 		<title>Three Aces's Menu - Pizza, Pasta, Chicken, Sandwiches &amp; More</title>
 		<link rel="stylesheet" type="text/css" href="Styles/screen.css" media="all">
-		<meta name="apple-itunes-app" content="app-id=436491861">
-		<meta name="robots" content="FOLLOW,INDEX, NOODP">
-		<link rel="stylesheet" type="text/css" href="Styles/order.css" media="all">    
+		
+		<style type = "text/css">
+			.header { 
+				background-color: #72A0C1; color: white; display: table; 
+				width: 100%; text-align: center; font-size: 250%;
+			}
+			.nav { 
+				background-color: white; color: #72A0C1; display: table; 
+				float: left; padding: 5px; width: 250px; 
+			}
+			.meal_name {
+				display: table; font-size: 150%;
+			}
+			.meal_image {
+				display: table; width: 300px; height: 240 px;
+			}
+		</style>		
     </head>
     
-	<body id="_dpz">
-		<header role="banner" class="is-anon js-headerContainer" data-dpz-track-group="navigation">
-			<button data-dpz-icon="menu" class="site-nav__toggle site-nav__toggle--nav" data-dpz-track-evt-name="hamburger" aria-label="Hamburger Menu" data-quid="mobile-toggle-site-nav"><!-- -->
-			</button>			
-			<nav role="navigation" class="site-nav"> 
-				<div id="startYourOrder" class="js-startYourOrder start-your-order__container is-hidden@handheld" data-quid="start-your-order-top">
-					<div class="js-startYourOrderContainer start-your-order" data-quid="start-your-order-content"> 
-						<div class="grid"> <div class="grid__cell--1/2@desktop grid__cell--1"> 
-							<h1 class="start-your-order__heading">Start Your Order</h1> 
-						</div> 
-						<div class="grid__cell--1/2@desktop grid__cell--1 start-your-order__ctas"> 
-							<a class="btn btn--delivery js-delivery" href="http://project0/order.php" data-method="Order" data-quid="start-your-order-delivery">Order</a> 							
-						</div> 
-					</div> 
-				</div>
-				<div id="js-siteMainNavigation" class="js-siteMainNavigation">
-					<ul class="site-nav__main site-nav--include-gift-cards">  
-						<li class="is-hidden@desktop">
-							<a class="navigation-home c-site-nav-main-link-0" data-quid="main-nav-link-0" href="https://www.dominos.com/en/">Home</a>
-						</li>  
-						<li class="">
-							<a class="c-site-nav-main-link-1" data-quid="main-nav-link-1" href="https://www.dominos.com/en/pages/order/">Order Online</a>
-						</li>  
-						<li class="">
-							<a class="navigation-nationalMenu qa-Cl_Menu c-site-nav-main-link-2 active" data-quid="main-nav-link-2" href="https://www.dominos.com/en/pages/order/menu.jsp">Menu</a>
-						</li>  
-					</ul>
-				</div> 
-				<div class="js-siteNavSub site-nav__sub"> <div class="js-mainLogo"><a href="https://www.dominos.com/en/" class="logo" style="background-image:url(https://cache.dominos.com/olo/5_21_1/assets/build/market/US/_en/images/img/img-logo-sub.png);">Domino's Pizza</a></div> <div id="js-subNavigationPage" class="js-subNavigationPage"><ul>  <li id=""><a class="js-navigationLink active" href="#/menu/category/viewAll/">View All</a></li>  <li id=""><a class="js-navigationLink" href="#/menu/category/pizza/">Pizza</a></li>  <li id=""><a class="js-navigationLink" href="#/menu/category/chicken/">Chicken</a></li>  <li id=""><a class="js-navigationLink" href="#/menu/category/sandwich/">Sandwiches</a></li>  <li id=""><a class="js-navigationLink" href="#/menu/category/pasta/">Pasta</a></li>  <li id=""><a class="js-navigationLink" href="#/menu/category/breadsAndSides/">Breads &amp; Sides</a></li>  <li id=""><a class="js-navigationLink" href="#/menu/category/desserts/">Desserts</a></li>  <li id=""><a class="js-navigationLink" href="#/menu/category/drinks/">Drinks</a></li>  <li id=""><a class="js-navigationLink" href="#/menu/category/extras/">Extras</a></li>  </ul></div> </div> <div id="js-myProfilePageHandheld" class="is-hidden@desktop"><!-- --></div> </nav>
-		</header>
-		<div id="pageContent" class="js-contentWrap content-wrap--full-header content-wrap"> <div class="progress-bar"></div><div id="genericMenuPage" class="national-menu">
-		<div class="grid" itemtype="http://schema.org/Menu" itemscope="">
-		<link itemprop="url" href="https://www.dominos.com/en/pages/order/www.dominos.com/en/pages/order/menu.jsp">
-        <div id="js-startYourOrderHandheld" class="js-startYourOrderHandheld is-hidden@desktop grid__cell--1"></div>
-        <meta itemprop="description" content="Domino's menu includes build your own pizzas, Specialty Pizzas, Oven Baked Sandwiches, pastas, chicken, breads, salads, drinks &amp;amp; desserts. Order online for carryout or delivery."><meta itemprop="name" content="Domino's National Menu"><div id="js-nationalMenuTxt" class="grid__cell--1"><div class="grid"> <div class="grid__cell--1&quot;"> <p class="informationText">This is the Domino's national menu. To see prices, coupons and exactly what items are available to you, <a href="https://www.dominos.com/en/pages/order/" class="national-menu-txt__link">select your local store.</a></p> </div>  </div></div>
-        <div id="js-categoryArea" class="grid__cell--1 national-menu__category-area"><div class="card__body">  <div class="media media--category-tile is-hidden@kiosk" id=""> <a class="qa-Pizza grid c-order-entree-qa-Pizza grid" href="#/menu/category/pizza/" data-wt-panelname="Pizza" data-quid="entree-Pizza"> <div class="rid__cell--1/5@desktop grid__cell--1/4@handheld media__image"> <img src="Domino's%20Menu%20-%20Pizza,%20Pasta,%20Chicken,%20Sandwiches%20&amp;%20More_files/build.png" alt="Pizza"> </div> <div class="grid__cell--4/5@desktop grid__cell--3/4@handheld media__body c-order-entrees-Pizza"> <h2 class="media__title" data-quid="entree-title-Pizza"> Pizza </h2> </div> </a> </div>  <div class="media media--category-tile is-hidden@kiosk" id=""> <a class="qa-Chicken grid c-order-entree-qa-Chicken grid" href="#/menu/category/chicken/" data-wt-panelname="Chicken" data-quid="entree-Chicken"> <div class="rid__cell--1/5@desktop grid__cell--1/4@handheld media__image"> <img src="Domino's%20Menu%20-%20Pizza,%20Pasta,%20Chicken,%20Sandwiches%20&amp;%20More_files/chicken.png" alt="Chicken"> </div> <div class="grid__cell--4/5@desktop grid__cell--3/4@handheld media__body c-order-entrees-Chicken"> <h2 class="media__title" data-quid="entree-title-Chicken"> Chicken </h2> </div> </a> </div>  <div class="media media--category-tile is-hidden@kiosk" id=""> <a class="qa-Sandwiches grid c-order-entree-qa-Sandwiches grid" href="#/menu/category/sandwich/" data-wt-panelname="Sandwiches" data-quid="entree-Sandwiches"> <div class="rid__cell--1/5@desktop grid__cell--1/4@handheld media__image"> <img src="Domino's%20Menu%20-%20Pizza,%20Pasta,%20Chicken,%20Sandwiches%20&amp;%20More_files/sandwiches.png" alt="Sandwiches"> </div> <div class="grid__cell--4/5@desktop grid__cell--3/4@handheld media__body c-order-entrees-Sandwiches"> <h2 class="media__title" data-quid="entree-title-Sandwiches"> Sandwiches </h2> </div> </a> </div>  <div class="media media--category-tile is-hidden@kiosk" id=""> <a class="qa-pasta grid c-order-entree-qa-pasta grid" href="#/menu/category/pasta/" data-wt-panelname="Pasta" data-quid="entree-Pasta"> <div class="rid__cell--1/5@desktop grid__cell--1/4@handheld media__image"> <img src="Domino's%20Menu%20-%20Pizza,%20Pasta,%20Chicken,%20Sandwiches%20&amp;%20More_files/pasta.png" alt="Pasta"> </div> <div class="grid__cell--4/5@desktop grid__cell--3/4@handheld media__body c-order-entrees-Pasta"> <h2 class="media__title" data-quid="entree-title-Pasta"> Pasta </h2> </div> </a> </div>  <div class="media media--category-tile is-hidden@kiosk" id=""> <a class="qa-breadsAndSides grid c-order-entree-qa-breadsAndSides grid" href="#/menu/category/breadsAndSides/" data-wt-panelname="Breads&amp;Sides" data-quid="entree-Breads&amp;Sides"> <div class="rid__cell--1/5@desktop grid__cell--1/4@handheld media__image"> <img src="Domino's%20Menu%20-%20Pizza,%20Pasta,%20Chicken,%20Sandwiches%20&amp;%20More_files/sides.png" alt="Breads and sides"> </div> <div class="grid__cell--4/5@desktop grid__cell--3/4@handheld media__body c-order-entrees-Breads&amp;Sides"> <h2 class="media__title" data-quid="entree-title-Breads&amp;Sides"> Breads &amp; Sides </h2> </div> </a> </div>  <div class="media media--category-tile is-hidden@kiosk" id=""> <a class="qa-dessert grid c-order-entree-qa-dessert grid" href="#/menu/category/desserts/" data-wt-panelname="Desserts" data-quid="entree-Desserts"> <div class="rid__cell--1/5@desktop grid__cell--1/4@handheld media__image"> <img src="Domino's%20Menu%20-%20Pizza,%20Pasta,%20Chicken,%20Sandwiches%20&amp;%20More_files/dessert.png" alt="menu.dessert_alt"> </div> <div class="grid__cell--4/5@desktop grid__cell--3/4@handheld media__body c-order-entrees-Desserts"> <h2 class="media__title" data-quid="entree-title-Desserts"> Desserts </h2> </div> </a> </div>  <div class="media media--category-tile is-hidden@kiosk" id=""> <a class="qa-drinks grid c-order-entree-qa-drinks grid" href="#/menu/category/drinks/" data-wt-panelname="Drinks" data-quid="entree-Drinks"> <div class="rid__cell--1/5@desktop grid__cell--1/4@handheld media__image"> <img src="Domino's%20Menu%20-%20Pizza,%20Pasta,%20Chicken,%20Sandwiches%20&amp;%20More_files/drinks.png" alt="Drinks"> </div> <div class="grid__cell--4/5@desktop grid__cell--3/4@handheld media__body c-order-entrees-Drinks"> <h2 class="media__title" data-quid="entree-title-Drinks"> Drinks </h2> </div> </a> </div>  <div class="media media--category-tile is-hidden@kiosk" id=""> <a class="qa-extras grid c-order-entree-qa-extras grid" href="#/menu/category/extras/" data-wt-panelname="Extras" data-quid="entree-Extras"> <div class="rid__cell--1/5@desktop grid__cell--1/4@handheld media__image"> <img src="Domino's%20Menu%20-%20Pizza,%20Pasta,%20Chicken,%20Sandwiches%20&amp;%20More_files/extras.png" alt="Extras"> </div> <div class="grid__cell--4/5@desktop grid__cell--3/4@handheld media__body c-order-entrees-Extras"> <h2 class="media__title" data-quid="entree-title-Extras"> Extras </h2> </div> </a> </div>  </div></div>
-        <div id="js-optionsArea" class="grid__cell--1 is-hidden"><div class="card card--pop options-footer"> <div class="card__header"> <h2 class="card__title">Available Options</h2> </div> <div class="card__body">  <div class="grid options-footer__border-bottom"> <div class="grid__cell--1/3 options-footer__border-right"> <h3 class="dominosColor1 js-nationalMenuOptionsHeader">Pizza Crusts</h3> <ul><li>Hand Tossed</li><li>Handmade Pan</li><li>Crunchy Thin Crust</li><li>Brooklyn Style</li><li>Gluten Free Crust</li></ul> </div> <div class="grid__cell--1/3 options-footer__border-right"> <h3 class="dominosColor1 js-nationalMenuOptionsHeader">Pizza Sizes</h3> <ul><li>Small (10")</li><li>Medium (12")</li><li>Large (14")</li></ul> </div> <div class="grid__cell--1/3"> <h3 class="dominosColor1 js-nationalMenuOptionsHeader">Sauces</h3> <ul><li>Alfredo Sauce</li><li>BBQ Sauce</li><li>Blue Cheese Sauce</li><li>Garlic Parmesan White Sauce</li><li>Hearty Marinara Sauce</li><li>Hot Sauce</li><li>Mango Habanero Sauce</li><li>Ranch Dressing</li><li>Robust Inspired Tomato Sauce</li></ul> </div> </div> <div class="grid option-footer__toppings-container"> <div class="grid__cell--1/3"> <h3 class="dominosColor1 js-nationalMenuOptionsHeader">Meats</h3> <ul><li>Bacon</li><li>Beef</li><li>Ham</li><li>Italian Sausage</li><li>Pepperoni</li><li>Philly Steak</li><li>Premium Chicken</li><li>Salami</li></ul> </div> <div class="grid__cell--2/3"> <h3 class="dominosColor1 js-nationalMenuOptionsHeader">Non-Meats</h3> <div class="grid grid--no-gutter"> <div class="grid__cell--1"> <ul class="options-non-meats"><li>American Cheese</li><li>Banana Peppers</li><li>Black Olives</li><li>Cheddar Cheese</li><li>Cheese</li><li>Diced Tomatoes</li><li>Feta Cheese</li><li>Green Peppers</li><li>Hot Sauce</li><li>Jalapeno Peppers</li><li>Mushrooms</li><li>Onions</li><li>Pineapple</li><li>Roasted Red Peppers</li><li>Shredded Parmesan</li><li>Shredded Provolone Cheese</li><li>Sliced Provolone</li><li>Spinach</li></ul> </div> </div> </div> </div>  </div> </div></div>
+	<body id="_apz">
+		<div > 
+			<table class="header">
+				<tr><td><img src="images/logo.jpeg"></img></td></tr>
+				<tr><td>Menu</td></tr>
+			</table>
 		</div>
-		</div>
-		</div>
-		<div id="pageFooter" class="page-footer" data-dpz-track-group="footer"><div class="js-mainFooter"><div class="site-footer grid"> <div class="site-footer__links grid__cell grid__cell--1"> <ul class="dominosColor1">  <li class="site-footer__links__item "><a class=" c-site-footer-link-0" href="https://biz.dominos.com/" target="_blank" data-quid="">Corporate</a></li>  <li class="site-footer__links__item "><a class=" c-site-footer-link-1" href="https://www.dominos.com/en/pages/content/nutritional/nutrition.jsp" data-quid="">Nutrition</a></li>  <li class="site-footer__links__item "><a class=" c-site-footer-link-2" href="https://www.dominos.com/en/pages/giftcard/" data-quid="">Gift Cards</a></li>  <li class="site-footer__links__item "><a class=" c-site-footer-link-3" href="https://www.dominosweddingregistry.com/" target="_blank" data-quid="">Wedding Registry</a></li>  <li class="site-footer__links__item "><a class=" c-site-footer-link-4" href="https://www.dominos.com/en/pages/content/opt-in/opt-in.jsp" data-quid="">Email &amp; Text Offers</a></li>  <li class="site-footer__links__item "><a class=" c-site-footer-link-5" href="https://www.dominos.com/en/#/content/terms/" data-quid="">Legal</a></li>  <li class="site-footer__links__item "><a class=" c-site-footer-link-6" href="https://www.dominos.com/en/#/content/privacy/" data-quid="">Privacy</a></li>  <li class="site-footer__links__item "><a class=" c-site-footer-link-7" href="https://jobs.dominos.com/dominos-careers" target="_blank" data-quid="">Jobs</a></li>  <li class="site-footer__links__item "><a class=" c-site-footer-link-8" href="https://www.dominos.com/en/pages/content/customer-service/faq.jsp" data-quid="">Customer Support</a></li>  <li class="site-footer__links__item "><a class=" c-site-footer-link-9" href="https://biz.dominos.com/web/business-orders" target="_blank" data-quid="">Large Business Orders</a></li>  <li class="site-footer__links__item "><a class=" c-site-footer-link-10" href="https://www.dominos.com/en/about-pizza/" data-quid="">About Pizza</a></li>  <li class="site-footer__links__item "><a class="js-toggleLang site-footer__links__item--language c-site-footer-link-11" href="https://www.dominos.com/en/pages/order/es" data-quid="">español</a></li>  </ul> </div> <div class="grid__cell grid__cell--1/8@desktop grid__cell--1 legal-stuff"> <p class="legal-label uppercase dominosColor1 c-site-footer-legalstuff">Legal Stuff:</p> </div> <div class="grid__cell grid__cell--5/8@desktop grid__cell--1 legal-stuff" data-quid="legal-stuff"> <div class="legal-content"> <p><span class="bold">Any Delivery Charge is not a tip paid to your driver. Please reward your driver for awesomeness. Drivers carry less than $20.</span>
- 
-		</div>  
-
+		<div class="nav"> 
+			<table>
+				<tr>
+					<td class="meal_name">Pizzas</td>
+					<td class="meal_image">
+						<img src="images/pizzas.png">
+					</td>
+				</tr>
+				<tr>
+					<td class="meal_name">Speciality Pizzas</td>
+					<td class="meal_image">
+						<img src="images/vege.jpeg">
+					</td>
+				</tr>		
+				<tr>
+					<td class="meal_name">Special Dinner</td>
+					<td class="meal_image">
+						<img src="images/dinner.jpeg">
+					</td>
+				</tr>		
+				<tr>
+					<td class="meal_name">Side Order</td>
+					<td class="meal_image">
+						<img src="images/chicken.png">
+					</td>
+				</tr>		
+				<tr>
+					<td class="meal_name">Salads</td>
+					<td class="meal_image">
+						<img src="images/salads.jpeg">
+					</td>
+				</tr>		
+				<tr>
+					<td class="meal_name">Spaghetti or Ziti</td>
+					<td class="meal_image">
+						<img src="images/spaghetti.jpeg">
+					</td>
+				</tr>		
+				<tr>
+					<td class="meal_name">Lasagna Ravioli or Manicotti</td>
+					<td class="meal_image">
+						<img src="images/lasagna.jpeg">
+					</td>
+				</tr>		
+				<tr>
+					<td class="meal_name">Calzones</td>
+					<td class="meal_image">
+						<img src="images/calzones.jpeg">
+					</td>
+				</tr>		
+				<tr>
+					<td class="meal_name">Wraps</td>
+					<td class="meal_image">
+						<img src="images/wrap.jpeg">
+					</td>
+				</tr>		
+				<tr>
+					<td class="meal_name">Grinders</td>
+					<td class="meal_image">
+						<img src="images/burger.jpeg">
+					</td>
+				</tr>		
+			</table>		
+		</div>		
 		
 	</body>
 </html>
