@@ -1,1 +1,0 @@
-dpz.customer=$.extend({},dpz.customer,{getStatus:function(){return site.func.customerLoggedIn()?"loggedin":site.func.customerSemiLoggedIn()?"remembered":"anonymous"}});
