@@ -102,7 +102,7 @@
 			<type size = "large" prize=1.85></type>
 		</extraCheese>
 	</category>	
-	<category name="Special Dinners" img="images/dinner.jpeg>
+	<category name="Special Dinners" img="images/dinner.jpeg">
 		<item name="Chicken Wing Dinner" price=7.25></item>
 		<item name="Gyro Plate" price=7.25></item>
 		<item name="Chicken Finger Plate" price=7.25></item>

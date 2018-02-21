@@ -5,23 +5,19 @@
  *
  * @param array $data
  */
-function render($template, $data = array())
+
+function load($template)
 {
-    $path = __DIR__ . '/../templates/' . $template . '.php';
-    if (file_exists($path))
+	$path = __DIR__ . '/../html/' . $template . '.php';
+	if (file_exists($path))
     {
-        extract($data);
         require($path);
     }
 }
 
-function load($template)
+function order($item)
 {
-	$path = __DIR__ . '/../templates/' . $template . '.php';
-    if (file_exists($path))
-    {
-        require($path);
-    }
+	echo $item;
 }
 
 ?>
