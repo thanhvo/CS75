@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html style="height: 100%;" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>The input element - HTML5 tutorial</title>
+    <meta name="description" content="The input element collect data entered into a form and sends it to the server.">
+    <!-- The Cascading Style Sheet (CSS) file mycss.css is where I set colors, fonts, spacing etc. - what is called "style". HTML is for "content". -->
+    <link rel="stylesheet" href="The%20input%20element%20-%20HTML5%20tutorial_files/mycss.css"> 
+    <link rel="glossary" href="https://www.html-5-tutorial.com/glossary.htm">
+    <link rel="copyright" href="https://www.html-5-tutorial.com/copyright.htm">
+    <link rel="prefetch" href="https://www.html-5-tutorial.com/domain.php">
+    <script async="" type="text/javascript" src="The%20input%20element%20-%20HTML5%20tutorial_files/v2_002.js"></script><script async="" type="text/javascript" src="The%20input%20element%20-%20HTML5%20tutorial_files/v2_003.js"></script><script async="" type="text/javascript" src="The%20input%20element%20-%20HTML5%20tutorial_files/v2.js"></script><script src="The%20input%20element%20-%20HTML5%20tutorial_files/cbgapi.loaded_1" async=""></script><script src="The%20input%20element%20-%20HTML5%20tutorial_files/cbgapi.loaded_0" async=""></script><script type="text/javascript" async="" src="The%20input%20element%20-%20HTML5%20tutorial_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" async="" src="The%20input%20element%20-%20HTML5%20tutorial_files/ga.js"></script><script src="The%20input%20element%20-%20HTML5%20tutorial_files/allscripts.js"></script>
+    <!-- The following makes older IEs (< IE9) work with new HTML5 tags. Include it in the head elements just as I do here. -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Google Analytics --> 
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10200228-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+       </script>
+  <script type="text/javascript" async="" src="The%20input%20element%20-%20HTML5%20tutorial_files/bsa.js"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="The%20input%20element%20-%20HTML5%20tutorial_files/translateelement.css"><script type="text/javascript" charset="UTF-8" src="The%20input%20element%20-%20HTML5%20tutorial_files/main.js"></script><script type="text/javascript" charset="UTF-8" src="The%20input%20element%20-%20HTML5%20tutorial_files/element_main.js"></script><script src="The%20input%20element%20-%20HTML5%20tutorial_files/ids.js"></script><script src="The%20input%20element%20-%20HTML5%20tutorial_files/ids.js"></script><script src="The%20input%20element%20-%20HTML5%20tutorial_files/ids.js"></script></head>
+  <body itemscope="" itemtype="https://schema.org/WebApplication" style="position: relative; min-height: 100%; top: 0px;"><!-- Throughout the site you will see tags with itemscope, itemtype=" " and itemprop=" ". This has to do with Rich Snippets that help with SEO. As a beginner don't worry about them. They are still in development. Hopefully by the time you need to use them they will be easier to implement. -->
+    <!-- BuySellAds Ad Code -->
+    <script type="text/javascript">
+    (function(){
+      var bsa = document.createElement('script');
+         bsa.type = 'text/javascript';
+         bsa.async = true;
+         bsa.src = 'https://s3.buysellads.com/ac/bsa.js';
+      (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+    })();
+    </script>
+    <!-- End BuySellAds Ad Code -->
+    <div class="left">
+    <!-- The row across the top of the page -->
+    <header>
+    <a href="https://www.html-5-tutorial.com/"><img src="The%20input%20element%20-%20HTML5%20tutorial_files/html-5-tutorial.gif" alt="HTML5 tutorial - The form element." width="900" height="100"></a>
+    </header>
+
+    <!-- The links down the left -->
+    <nav>
+      <ul>
+        <li><a href="https://www.html-5-tutorial.com/">home</a></li>
+        <li><a href="https://www.html-5-tutorial.com/start-html5-tutorial.htm">start tutorial</a></li>
+        <li><a href="https://www.html-5-tutorial.com/about-html.htm">what is HTML?</a></li>
+        <li><a href="https://www.html-5-tutorial.com/about-html5.htm">what is HTML5?</a></li>
+        <li><a href="https://www.html-5-tutorial.com/what-its-not.htm">what it's not</a></li>
+        <li><a href="https://www.html-5-tutorial.com/doctype.htm"><code>&lt;doctype&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/html-tag.htm"><code>&lt;html&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/head-tag.htm"><code>&lt;head&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/body-tag.htm"><code>&lt;body&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/h1-h6-tags.htm"><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/p-tag.htm"><code>&lt;p&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/ul-ol-tags.htm"><code>&lt;ul&gt;</code>  &amp; <code>&lt;ol&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/dl-tag.htm"><code>&lt;dl&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/a-tag.htm"><code>&lt;a&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/table-tag.htm"><code>&lt;table&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/strong-and-b-elements.htm"><code>&lt;strong&gt;</code> &amp; <code>&lt;b&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/div-tag.htm"><code>&lt;div&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/div-tag-cont.htm"><code>&lt;div&gt;</code> cont.</a></li>
+        <li><a href="https://www.html-5-tutorial.com/header-element.htm"><code>&lt;header&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/nav-element.htm"><code>&lt;nav&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/article-element.htm"><code>&lt;article&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/footer-element.htm"><code>&lt;footer&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/aside-element.htm"><code>&lt;aside&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/section-element.htm"><code>&lt;section&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/image-element.htm"><code>&lt;img&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/image-element-cont.htm"><code>&lt;img&gt;</code> cont.</a></li>
+        <li><a href="https://www.html-5-tutorial.com/map-and-area-elements.htm"><code>&lt;map&gt;</code> &amp; <code>&lt;area&gt;</code></a></li>
+        <li><a href="https://www.html-5-tutorial.com/form-element.php"><code>&lt;form&gt;</code></a></li>
+        <li><strong><a href="https://www.html-5-tutorial.com/input-element.php"><code>&lt;input&gt;</code></a></strong></li>
+        <li><a href="https://www.html-5-tutorial.com/domain.php">get a domain</a> <b class="red sm">NEW</b></li>
+        <li><a href="https://www.html-5-tutorial.com/server.htm">get a server</a> <b class="red sm">NEW</b></li>
+        <li><a href="https://www.html-5-tutorial.com/signup-bluehost.htm">signing up</a> <b class="red sm">NEW</b></li>
+        <li><a href="https://www.html-5-tutorial.com/blog.htm">blog</a></li>
+        <li><a href="https://www.html-5-tutorial.com/all-html-tags.htm">all HTML5 tags</a></li>
+        <li><a href="https://www.html-5-tutorial.com/helpful-links.htm">helpful links</a></li>
+        <li><a href="https://www.html-5-tutorial.com/glossary.htm">glossary</a></li>
+        <li><a href="https://www.html-5-tutorial.com/contact.php">contact</a></li>
+      </ul>
+    </nav>
+    <article>
+      <nav class="pvnx"><a href="https://www.html-5-tutorial.com/form-element.php">previous</a> • <a href="https://www.html-5-tutorial.com/input-element.php" class="noshow">the input element</a> • <a href="https://www.html-5-tutorial.com/domain.php">next</a></nav>
+      <h1 itemprop="name"><strong itemprop="description"><a itemprop="url" href="https://www.html-5-tutorial.com/input-element.php" class="noshow">The input and related elements</a></strong></h1>
+      <img itemprop="image" class="showcode" src="The%20input%20element%20-%20HTML5%20tutorial_files/input-element.gif" alt="The input element" width="347" height="318">
+      <p>The <code><strong>&lt;input&gt;</strong></code> element is the principal element that collects information entered into a form.</p>
+      <p>It's been around since the beginning of the web, but in HTML5 <code><strong>&lt;input&gt;</strong></code> has been revamped into a new and greatly improved tool – or at least it will be.</p>
+      <p>Unfortunately, while W3C has written the new specifications, as
+ of the summer of 2012 the browsers have implemented few of them. Chrome
+ has advanced the most. Go to <a href="https://www.html5test.com/index.html" target="_blank">html5test.com</a> to see how far along in development your browser is.</p>
+      <p>HTML5 should be finished (what they call a "final 
+recommendation") by 2014 and with any luck all the new input types will 
+be working by then or soon thereafter.</p>
+      <p>In the form below, except for "email" and "number", all types 
+have been part of HTML for years. Both "email" and "number" work in the 
+latest Chrome.</p>
+      <p>To see the new types in action open this page in Chrome and 
+fill out the form. Enter whatever you want – you are the only one who 
+will see it. No email is sent to anyone, nor is anything saved. When you
+ click "Submit" the data is displayed below.</p>
+      <!-- https://www.html-form-guide.com/php-form/php-form-select.html -->
+      <form action="input-element.php" method="post">
+        <dl>
+          <dt>
+            <b>Name:</b> <input name="your_name" size="35" autofocus="" required="" type="text"> <span class="sm">required</span>
+          </dt>
+            <!-- I have the size set to 35, but you can set it to whatever you wish. While the "text" type is old, the "autofocus" and "required" are new. -->
+            <dd class="margtop">
+              <strong><code>&lt;input <mark>type="text"</mark> name="your_name" size="35" value=""&gt;</code></strong>
+            </dd>
+            <dd class="margtop">
+              Input <em>type="text"</em> has been the main input "type" used since the beginning and will continue to be so for the foreseeable future.
+            </dd>
+            <dd>
+              It has a name attribute, in this case: <strong><code>name="your_name"</code></strong>.
+ I will explain the role of the name attribute in more detail below. The
+ tag also has a size attribute and a value attribute, which should be 
+left blank (<strong><code>value=""</code></strong>) to display an empty input tag.
+            </dd>
+            <dd>
+              The input element does not have a closing tag.
+            </dd>
+          <dt class="margtop">
+            <b>Email:</b> <input name="email" size="35" type="email"> <span class="sm">required</span>
+          </dt>
+            <dd class="margtop">
+              <strong><code>&lt;input <mark>type="email"</mark> name="email" size="35" value=""&gt;</code></strong>
+            </dd>
+            <dd class="margtop">
+              Input <em>type="email"</em> is new to HTML5. It's like a 
+"text", but it checks that the content is a valid email address. In 
+Chrome enter something other than an email address, click "Submit" and 
+see what happens.
+            </dd>
+          <dt class="margtop">
+            <b>Age:</b> <input name="age" value="0" type="number">
+          </dt>
+            <dd class="margtop">
+              <strong><code>&lt;input <mark>type="number"</mark> name="age" value=""&gt;</code></strong>
+            </dd>
+            <dd class="margtop">
+              Input <em>type="number"</em> is also like a "text", but it checks that the content is a valid number.
+            </dd>
+          <dt class="margtop">
+            <table>
+              <tbody><tr>
+                <td class="chbx1">
+                  <b>Gender:</b>
+                </td>
+                <td class="chbx2">
+                  <input id="male" name="gender" checked="checked" value="Male" type="radio">
+                </td>
+                <td>
+                  <p><label for="male">Male</label></p>
+                </td>
+                <td class="chbx2">
+                  <input id="female" name="gender" value="Female" type="radio">
+                </td>
+                <td>
+                  <p><label for="female">Female</label></p>
+                </td>
+                <td class="chbx2">
+                  <input id="other" name="gender" value="Other" type="radio">
+                </td>
+                <td>
+                  <p><label for="other">Other</label></p>
+                </td>
+              </tr>
+            </tbody></table>
+            <!-- There is a lot to learn on this page and I skipped over the label element. Above you see <input id="other" and <label for="other">. This makes it so that when you click on the word "Other" the related radio button is checked. -->
+          </dt>
+            <dd>
+              <strong><code>&lt;input <mark>type="radio"</mark> name="gender" value="Male"&gt;</code></strong><br>
+              <strong><code>&lt;input type="radio" name="gender" value="Female"&gt;</code></strong><br>
+              <strong><code>&lt;input type="radio" name="gender" value="Other"&gt;</code></strong>
+            </dd>
+            <dd>
+              Input <em>type="radio"</em> lets you select one of various
+ option. I include "Other" to show that "radio buttons", as they are 
+often called, can have more than two options. What "Other" constitutes I
+ leave to your imagination.
+            </dd>
+            <dd>
+              Notice that all three have the same name and that the "value" attribute is preset.
+            </dd>
+          <dt class="margtop">
+            <table>
+              <tbody><tr>
+                <td class="chbx1">
+                  <b>Games:</b>
+                </td>
+                <td class="chbx2">
+                  <input id="chess" name="chess" value="Chess" type="checkbox">
+                </td>
+                <td>
+                  <p><label for="chess">Chess</label></p>
+                </td>
+                <td class="chbx2">
+                  <input id="checkers" name="checkers" value="Checkers" type="checkbox">
+                </td>
+                <td>
+                  <p><label for="checkers">Checkers</label></p>
+                </td>
+                <td class="chbx2">
+                  <input id="backgammon" name="backgammon" value="Backgammon" type="checkbox">
+                </td>
+                <td>
+                  <p><label for="backgammon">Backgammon</label></p>
+                </td>
+                <td class="chbx2">
+                  <input id="poker" name="poker" value="Poker" type="checkbox">
+                </td>
+                <td>
+                  <p><label for="poker">Poker</label></p>
+                </td>
+                <td class="chbx2">
+                  <input id="bridge" name="bridge" value="Bridge" type="checkbox">
+                </td>
+                <td>
+                  <p><label for="bridge">Bridge</label></p>
+                </td>
+                <td class="chbx2">
+                  <input id="cribbage" name="cribbage" value="Cribbage" type="checkbox">
+                </td>
+                <td>
+                  <p><label for="cribbage">Cribbage</label></p>
+                </td>
+              </tr>
+            </tbody></table>
+            <!-- There is a lot to learn on this page and I skipped over the label element. Above you see <input id="cribbage" and <label for="cribbage">. This makes it so that when you click on the word "Cribbage" the related checkbox is checked. -->
+          </dt>
+            <dd>
+              <strong><code>&lt;input <mark>type="checkbox"</mark> name="chess" value="Chess"&gt;</code></strong><br>
+              <strong><code>&lt;input type="checkbox" name="checkers" value="Checkers"&gt;</code></strong><br>etc.
+            </dd>
+            <dd class="margtop">
+              With input <em>type="checkbox"</em> you can check multiple boxes. Unlike radio buttons you are <b>not</b> choosing just one of different options.
+            </dd>
+            <dd>
+              Again, "value" is preset, however unlike radio buttons, 
+with checkboxes the "name" does change. Take a moment to review the 
+difference between radio buttons and check boxes. As a beginner I found 
+this confusing – but then I am easily confused.
+            </dd>
+          <dt>
+            <b>Country:</b> 
+            <select name="country">
+              <option value="None selected" selected="selected">Please select below</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+              <option value="Algeria">Algeria</option>
+              <option value="American Samoa">American Samoa</option>
+              <option value="Andorra">Andorra</option>
+              <option value="Angola">Angola</option>
+              <option value="Anguilla">Anguilla</option>
+              <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Armenia">Armenia</option>
+              <option value="Aruba">Aruba</option>
+              <option value="Australia">Australia</option>
+              <option value="Austria">Austria</option>
+              <option value="Azerbaijan">Azerbaijan</option>
+              <option value="Bahamas">Bahamas</option>
+              <option value="Bahrain">Bahrain</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Barbados">Barbados</option>
+              <option value="Belarus">Belarus</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Belize">Belize</option>
+              <option value="Benin">Benin</option>
+              <option value="Bermuda">Bermuda</option>
+              <option value="Bhutan">Bhutan</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Bosnia-Herzegovina">Bosnia-Herzegovina</option>
+              <option value="Botswana">Botswana</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Brunei">Brunei</option>
+              <option value="Bulgaria">Bulgaria</option>
+              <option value="Burkina Faso">Burkina Faso</option>
+              <option value="Burundi">Burundi</option>
+              <option value="Cambodia">Cambodia</option>
+              <option value="Cameroon">Cameroon</option>
+              <option value="Canada">Canada</option>
+              <option value="Cape Verde">Cape Verde</option>
+              <option value="Cayman Islands">Cayman Islands</option>
+              <option value="Central African Republic">Central African Republic</option>
+              <option value="Chad">Chad</option>
+              <option value="Chile">Chile</option>
+              <option value="China">China</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Comoros">Comoros</option>
+              <option value="Congo">Congo</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Croatia">Croatia</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Cyprus">Cyprus</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Dominica">Dominica</option>
+              <option value="Dominican Republic">Dominican Republic</option>
+              <option value="East Timor">East Timor</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Egypt">Egypt</option>
+              <option value="El Salvador">El Salvador</option>
+              <option value="Equatorial Guinea">Equatorial Guinea</option>
+              <option value="Eritrea">Eritrea</option>
+              <option value="Estonia">Estonia</option>
+              <option value="Ethiopia">Ethiopia</option>
+              <option value="Fiji">Fiji</option>
+              <option value="Finland">Finland</option>
+              <option value="France">France</option>
+              <option value="French Guiana">French Guiana</option>
+              <option value="Gabon">Gabon</option>
+              <option value="Gambia">Gambia</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Germany">Germany</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Gibraltar">Gibraltar</option>
+              <option value="Greece">Greece</option>
+              <option value="Greenland">Greenland</option>
+              <option value="Grenada">Grenada</option>
+              <option value="Guatemala">Guatemala</option>
+              <option value="Guinea">Guinea</option>
+              <option value="Guinea Bissau">Guinea Bissau</option>
+              <option value="Guyana">Guyana</option>
+              <option value="Haiti">Haiti</option>
+              <option value="Honduras">Honduras</option>
+              <option value="Hong Kong">Hong Kong</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Iceland">Iceland</option>
+              <option value="India">India</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Iran">Iran</option>
+              <option value="Iraq">Iraq</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Israel">Israel</option>
+              <option value="Italy">Italy</option>
+              <option value="Ivory Coast">Ivory Coast</option>
+              <option value="Jamaica">Jamaica</option>
+              <option value="Japan">Japan</option>
+              <option value="Jordan">Jordan</option>
+              <option value="Kazakhstan">Kazakhstan</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Kiribati">Kiribati</option>
+              <option value="Kuwait">Kuwait</option>
+              <option value="Kyrgyzstan">Kyrgyzstan</option>
+              <option value="Laos">Laos</option>
+              <option value="Latvia">Latvia</option>
+              <option value="Lebanon">Lebanon</option>
+              <option value="Lesotho">Lesotho</option>
+              <option value="Liberia">Liberia</option>
+              <option value="Libya">Libya</option>
+              <option value="Liechtenstein">Liechtenstein</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Macau">Macau</option>
+              <option value="Macedonia">Macedonia</option>
+              <option value="Madagascar">Madagascar</option>
+              <option value="Malawi">Malawi</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Maldives">Maldives</option>
+              <option value="Mali">Mali</option>
+              <option value="Malta">Malta</option>
+              <option value="Martinique">Martinique</option>
+              <option value="Mauritania">Mauritania</option>
+              <option value="Mauritius">Mauritius</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Micronesia">Micronesia</option>
+              <option value="Moldova">Moldova</option>
+              <option value="Monaco">Monaco</option>
+              <option value="Mongolia">Mongolia</option>
+              <option value="Montenegro">Montenegro</option>
+              <option value="Montserrat">Montserrat</option>
+              <option value="Morocco">Morocco</option>
+              <option value="Mozambique">Mozambique</option>
+              <option value="Myanmar">Myanmar</option>
+              <option value="Namibia">Namibia</option>
+              <option value="Nauru">Nauru</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="New Caledonia">New Caledonia</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Nicaragua">Nicaragua</option>
+              <option value="Niger">Niger</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Niue">Niue</option>
+              <option value="North Korea">North Korea</option>
+              <option value="Norway">Norway</option>
+              <option value="Oman">Oman</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Palau">Palau</option>
+              <option value="Panama">Panama</option>
+              <option value="Papua New Guinea">Papua New Guinea</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Peru">Peru</option>
+              <option value="Philippines">Philippines</option>
+              <option value="Poland">Poland</option>
+              <option value="Polynesia">Polynesia</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Reunion">Reunion</option>
+              <option value="Romania">Romania</option>
+              <option value="Russia">Russia</option>
+              <option value="Rwanda">Rwanda</option>
+              <option value="Saint Helena">Saint Helena</option>
+              <option value="Saint Lucia">Saint Lucia</option>
+              <option value="Samoa">Samoa</option>
+              <option value="San Marino">San Marino</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+              <option value="Senegal">Senegal</option>
+              <option value="Serbia">Serbia</option>
+              <option value="Sierra Leone">Sierra Leone</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Somalia">Somalia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="South Georgia">South Georgia</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Spain">Spain</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="Sudan">Sudan</option>
+              <option value="Suriname">Suriname</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Syria">Syria</option>
+              <option value="Taiwan">Taiwan</option>
+              <option value="Tajikistan">Tajikistan</option>
+              <option value="Tanzania">Tanzania</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Togo">Togo</option>
+              <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+              <option value="Tunisia">Tunisia</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Turkmenistan">Turkmenistan</option>
+              <option value="Uganda">Uganda</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="United States">United States</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Uzbekistan">Uzbekistan</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Vietnam">Vietnam</option>
+              <option value="Yemen">Yemen</option>
+              <option value="Zaire">Zaire</option>
+              <option value="Zambia">Zambia</option>
+              <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+          </dt>
+            <dd class="margtop">
+              <strong><code>&lt;<mark>select</mark> name="country"&gt;</code></strong><br>
+              <strong>&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;<mark>option</mark> value="None selected"&gt;Please select below&lt;/<mark>option</mark>&gt;</code></strong><br>
+              <strong>&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;option value="Afghanistan"&gt;Afghanistan&lt;/option&gt;</code></strong><br>
+              <strong>&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;option value="Albania"&gt;Albania&lt;/option&gt;</code></strong><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;etc.<br>
+              <strong><code>&lt;/<mark>select</mark>&gt;</code></strong>
+            </dd>
+            <dd class="margtop">
+              While <code><strong>&lt;select name=""&gt;</strong></code> and <code><strong>&lt;option value=""&gt;</strong></code> are different elements, they are related to the input element in that they collect data entered in a form.
+            </dd>
+          <dt class="margtop">
+            <table>
+              <tbody><tr>
+                <td>            
+                  <b>Comments:</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <textarea name="comments" rows="3" maxlength="200" cols="60"></textarea>
+                </td>
+              </tr>
+            </tbody></table>
+          </dt>
+            <dd class="margtop">
+              <strong><code>&lt;<mark>textarea</mark> name="comments" rows="3" maxlength="200" cols="60"&gt;&lt;/<mark>textarea</mark>&gt;</code></strong>
+            </dd>
+            <dd class="margtop">
+              Larger blocks of text are collected by the "textarea" element.
+            </dd>
+          <dt>
+            <b>Hidden input</b>
+          </dt>
+            <dd class="margtop">
+              <strong><code>&lt;input <mark>type="hidden"</mark> name="your_ip" value=""&gt;</code></strong>
+            </dd>
+            <dd class="margtop">
+              Input <em>type="hidden"</em> is useful for situations when
+ you might want to gather data not supplied by the person filling out 
+the form. Here I use a hidden input tag to collect your IP address.
+            <input name="your_ip" value="99.61.165.62" type="hidden">
+            </dd>
+          <dt class="margtop">
+            <input name="submit" value=" Submit " type="submit">
+          </dt>
+            <dd class="margtop">
+            <strong><code>&lt;input <mark>type="submit"</mark> name="submit" value=" Submit "&gt;</code></strong>
+            </dd>
+            <dd class="margtop">
+              Input <em>type="submit"</em> displays as a button with the contents of the "value" attribute written on the button.
+            </dd>
+            <dd class="margtop">
+              Clicking "Submit" triggers the browser to send the 
+information entered in the form back to the server and process the data 
+according to the instructions in file indicated by the action attribute 
+of the opening form tag: <code><strong>&lt;form action="input-element.php" method="post"&gt;</strong></code>. This was covered on the <a href="https://www.html-5-tutorial.com/form-element.php">form element</a> page.
+            </dd>
+        </dl>
+      </form>
+            <p>All elements used to collect data in a form have a "name" attribute (<strong><code>name=""</code></strong>). That is the name of the <b>variable</b> that is assigned the <b>value</b> of the data collected by each <i>input</i>, <i>select</i> or <i>textarea</i> element.</p>
+      <p>You haven't yet filled out the form and submitted it; therefore
+ the program hasn't run and no changes have been made. Try it and see 
+what happens.</p>      <p>The variables and their corresponding values 
+are sent to my server where they are picked up and processed by the 
+program in input-element.php. The HTML is then reassembled and sent back
+ to your browser with the new changes in place. While this particular 
+form does not, normally there would be instructions in the program to 
+send the website owner an email that included the data entered in the 
+form.</p>
+      <p>We have covered a lot of ground on this and the <a href="https://www.html-5-tutorial.com/form-element.php" title="form element">previous</a>
+ page. My goal was to give you an overall understanding of the role 
+forms play and general idea of how they work, rather than explicit 
+instructions on how to build a functional form. That will have to wait 
+for a future tutorial. There are a few things you need first – not the 
+least of which is a server.</p>
+      <p>If you have a server, great; if not, you are getting to the 
+point where you may want to think about getting your own domain and 
+finding a hosting company. Next we will look into doing just that.</p>
+      <nav class="pvnx"><a href="https://www.html-5-tutorial.com/form-element.php">previous</a> • <a href="https://www.html-5-tutorial.com/input-element.php" class="noshow">the input and related elements</a> • <a href="https://www.html-5-tutorial.com/domain.php">next</a></nav>
+      <!-- The row on the bottom -->
+      <footer> 
+      <h2><strong><a href="https://www.html-5-tutorial.com/input-element.php" class="botlink">the input and related elements</a></strong></h2>
+      <p>"May the line of least resistance lead me on." Delbert McClinton</p>
+      <aside class="blue">
+        <p><a href="https://www.bluehost.com/track/html5tutorial/form_txt" target="_blank" class="bluehost">This site is hosted with blue<b>host</b>.</a></p>
+    </aside>
+      <table class="wd100">
+        <tbody><tr>
+          <td class="sm c wd33"><a href="https://www.html-5-tutorial.com/privacy-policy.htm">privacy policy</a></td>
+          <td class="sm c"><a href="https://www.html-5-tutorial.com/about-html-5-tutorial.htm">about html-5-tutorial.com</a></td>
+          <td class="sm c wd33"><a href="https://www.html-5-tutorial.com/copyright.htm">copyright</a></td>
+        </tr>
+      </tbody></table>
+          <table class="wd100">
+            <tbody><tr>
+              <td class="c">
+                <a href="https://www.w3.org/html/logo/" target="_blank"><img class="html5logo" src="The%20input%20element%20-%20HTML5%20tutorial_files/html5-badge-h-css3-semantics.gif" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics" width="145" height="64"></a>
+              </td>
+              <td class="cm lr">
+                <p><a href="javascript:bookmark_us('https://www.html-5-tutorial.com/','Html-5-tutorial.com%20-%20A%20tutorial%20for%20beginners')"><strong>Bookmark html-5-tutorial.com</strong></a><br><span class="xsm">(In Chrome press <strong>Ctrl-D</strong>)</span></p>
+              </td>
+            </tr>
+          </tbody></table>
+          <p class="copy">You may need to upgrade your browser to <a href="https://windows.microsoft.com/en-US/internet-explorer/products/ie/home" target="_blank">IE 9.0</a>, <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">FireFox</a>.<br>Older browsers, most notably IE 8.0 and earlier, do not support HTML5.</p>
+          <meta itemprop="browserRequirements" content="All browsers except IE6 and earlier.">
+          <address><a href="https://www.html-5-tutorial.com/copyright.htm">© <script>print_year()</script>2017</a> <a href="https://plus.google.com/114814659207265399196/posts" rel="author" target="_blank">Duncan Aitken</a> • Barrio Jucanya, Panajachel, Guatemala C.A. • <a href="https://www.atitlandesign.com/" target="_blank">Atitlan Design</a> • <script>print_mail_to_link()</script><a class="quote" href="mailto:duncansprivateemail@gmail.com">duncansprivateemail@gmail.com</a></address>
+      </footer>
+    </article>
+  </div>
+    <aside>
+      <div class="gplus">
+        <!-- Place this tag where you want the +1 button to render -->
+        <div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;" id="___plusone_0"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" id="I0_1514320980249" name="I0_1514320980249" src="The%20input%20element%20-%20HTML5%20tutorial_files/fastbutton.html" data-gapiattached="true" title="G+" width="100%" frameborder="0"></iframe></div>
+        <p class="gplus">Be my hero!</p>
+        <!-- Place this render call where appropriate -->
+        <script>
+          (function () {
+            var po = document.createElement('script');
+            po.type = 'text/javascript';
+            po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+      </div>
+      <div class="translate">
+        <div id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo"><option value="" selected="selected">Select Language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="am">Amharic</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="co">Corsican</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="fy">Frisian</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="haw">Hawaiian</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="ko">Korean</option><option value="ku">Kurdish (Kurmanji)</option><option value="ky">Kyrgyz</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="lb">Luxembourgish</option><option value="mk">Macedonian</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="ps">Pashto</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sm">Samoan</option><option value="gd">Scots Gaelic</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="xh">Xhosa</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></div>Powered by <span style="white-space:nowrap"><a class="goog-logo-link" href="https://translate.google.com/" target="_blank"><img src="The%20input%20element%20-%20HTML5%20tutorial_files/googlelogo_color_42x16dp.png" style="padding-right: 3px" alt="Google Translate" width="37px" height="14px">Translate</a></span></div></div>
+        <script>
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+              pageLanguage: 'en'
+            }, 'google_translate_element');
+          }
+        </script>
+      </div>
+    </aside>
+    <aside style="visibility: visible; opacity: 1;">
+      <script type="text/javascript" src="The%20input%20element%20-%20HTML5%20tutorial_files/fpi_002.js"></script><iframe id="sovrn_ad_unit_391688_async" margin="0" padding="0" scrolling="no" src="The%20input%20element%20-%20HTML5%20tutorial_files/input-element_data/a_002.html" data-zid="391688" class="sovrn_ad_unit" style="margin: 0px; padding: 0px; border: 0px none; width: 300px; height: 250px; overflow: hidden;" data-integralas-id-c3617d11-1665-3957-a2f2-afdfb7540e62="" width="300" height="250" frameborder="0"></iframe>
+    </aside><iframe name="oauth2relay1592207254" id="oauth2relay1592207254" src="The%20input%20element%20-%20HTML5%20tutorial_files/postmessageRelay.html" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1" aria-hidden="true"></iframe>
+    <aside class="c">
+      <a href="https://www.bluehost.com/track/html5tutorial/a_ad" target="_blank">
+        <img src="The%20input%20element%20-%20HTML5%20tutorial_files/bh-300x250-03-dy.png" class="bluehost" alt="bluehost" title="This site is hosted with bluehost." width="300" height="250">          <br>
+          <span class="bluehost">This site is hosted with bluehost.</span></a>
+    </aside>
+    <aside style="visibility: visible; opacity: 1;">
+      <script type="text/javascript" src="The%20input%20element%20-%20HTML5%20tutorial_files/fpi_003.js"></script><iframe id="sovrn_ad_unit_391689_async" margin="0" padding="0" scrolling="no" src="The%20input%20element%20-%20HTML5%20tutorial_files/input-element_data/a_002.html" data-zid="391689" class="sovrn_ad_unit" style="margin: 0px; padding: 0px; border: 0px none; width: 300px; height: 250px; overflow: hidden;" width="300" height="250" frameborder="0"></iframe>
+    </aside>
+    <aside style="visibility: visible; opacity: 1;">
+      <script type="text/javascript" src="The%20input%20element%20-%20HTML5%20tutorial_files/fpi.js"></script><iframe id="sovrn_ad_unit_391690_async" margin="0" padding="0" scrolling="no" src="The%20input%20element%20-%20HTML5%20tutorial_files/input-element_data/a_002.html" data-zid="391690" class="sovrn_ad_unit" style="margin: 0px; padding: 0px; border: 0px none; width: 300px; height: 250px; overflow: hidden;" width="300" height="250" frameborder="0"></iframe>
+    </aside>
+    <script src="The%20input%20element%20-%20HTML5%20tutorial_files/element.js"></script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="The%20input%20element%20-%20HTML5%20tutorial_files/translate_24dp.png" alt="Google Translate" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

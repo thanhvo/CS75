@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Template with footer element</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<style>
+			html { color: black; background-color: white; text-align: center; font-family: sans-serif; }
+			body { width: 1250px; margin: 0 auto 0 auto; text-align: left; padding: 5px; }
+			
+			header, footer { width: 1250px; display: table; }
+			/* To add style to the footer I simply changed "header" to "header, footer". In other words both header and footer have the same style except for text alignment and background color which is set below. */
+			nav { width: 300px; float: left; display: table; }
+			article { width: 950px; display: table; } 
+			footer { text-align: center; }
+
+			/* Below I have added background colors so you can see where each element is. You can delete them if you want. */
+			body { background-color: green; }
+			header { background-color: red; }
+			nav { background-color: yellow; }
+			article { background-color: blue; }
+			footer { background-color: orange; }
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>My New Template</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="https://www.html-5-tutorial.com/index.htm">home</a></li>
+			</ul>
+		</nav>
+ 		<article>
+ 			<h1>The article title</h1>
+			<p>This is the contents of the article element.</p>
+		</article>
+		<footer>
+			<h1>About Me</h1>
+			<p>©</p>
+		</footer>
+	 
+</body></html>
