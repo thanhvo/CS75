@@ -11,7 +11,7 @@
 			</table>
 		</div>
 		
-		<form action="order.php" method="POST">
+		<form action="add_order.php" method="POST">
 		<ul>
 			<li>
 				<table>
@@ -173,11 +173,10 @@
 					</tr>
 				</table>	  
 			</li>
-		</ul>
-		<table>
-			<tr><td align="center"><input value="Checkout" type="submit"></input></td></tr>			
-		</table>
+		</ul>		
 		</form>
-
+		<form action="checkout.php" method="POST">
+			<button align="center" type="submit" name="checkout" value="checkout">Checkout</button>
+		</form>
 	</body>
 </html>

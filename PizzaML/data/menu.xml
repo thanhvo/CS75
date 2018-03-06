@@ -20,6 +20,10 @@
 			<price size = "small">6.85</price>
 			<price size = "large">10.75</price>
 		</item>
+		<item name = "mushrooms_pizza">
+			<price size = "small">6.85</price>
+			<price size = "large">10.75</price>
+		</item>
 		<item name = "anchovies_pizza">
 			<price size = "small">6.85</price>
 			<price size = "large">10.75</price>
@@ -68,121 +72,120 @@
 			<price size = "small">8.90</price>
 			<price size = "large">12.80</price>			
 		</item>
-		<item name = "Three Aces Special">
+		<item name = "three_ace_special">
 			<price size = "small">9.80</price>
 			<price size = "large">15.80</price>
 		</item>
-		<item name = "Mediterranean">
+		<item name = "mediterranean">
 			<price size = "small">9.80</price>
 			<price size = "large">15.80</price>
 		</item>
-		<item name = "Vegetarian">
+		<item name = "vegetarian">
 			<price size = "small">9.80</price>
 			<price size = "large">15.80</price>
 		</item>
-		<item name = "Meat Lovers">
+		<item name = "meat_lovers">
 			<price size = "small">9.80</price>
 			<price size = "large">15.80</price>
 		</item>
-		<item name = "Bbq Grilled Chicken">
+		<item name = "bbq_grilled_chicken">
 			<price size = "small">9.80</price>
 			<price size = "large">15.80</price>
 		</item>
-		<item name = "Grecian Supereme">
+		<item name = "grecian_supereme">
 			<price size = "small">9.80</price>
 			<price size = "large">15.80</price>
 		</item>
-		<extraCheese>
-			<price size = "none" >0.0</price>
+		<item name = "extra_cheese">
 			<price size = "small">1.25</price>
 			<price size = "large">1.85</price>
-		</extraCheese>
+		</item>
 	</category>	
-	<category name="Special Dinners">
+	<category name="special_dinners">
 		<item name="Chicken Wing Dinner">
 			<price>7.25</price>
 		</item>
-		<item name="Gyro Plate">
+		<item name="gyro_plate">
 			<price>7.25</price>
 		</item>
-		<item name="Chicken Finger Plate">
+		<item name="chicken_finger_plate">
 			 <price>7.25</price>
 		</item>
-		<item name="3 Piece Chicken Dinner">
+		<item name="3_piece_chicken_dinner">
 			 <price>7.25</price>
 		</item>
-		<item name="Cheeseburger">
+		<item name="cheeseburger">
 			 <price>5.25</price>
 		</item>
-		<item name="Cheese Burger Plate">
+		<item name="cheese_burger_plate">
 			<price>5.25</price>
 		</item>
-		<item name="Double-cheeseburger Plate">
+		<item name="double_cheeseburger_plate">
 			 <price>5.75</price>
 		</item>
-		<item name="Chicken Kabob Plate">
+		<item name="chicken_kabob_plate">
 			 <price>7.85</price>
 		</item>
-		<item name="Steak Tips Dinner">
+		<item name="steak_tips_dinner">
 			 <price>8.25</price>
 		</item>
-		<item name="Fish and Chips Dinner">
+		<item name="fish_and_chips_dinner">
 			 <price>7.35</price>
 		</item>
 	</category>
-	<category name = "Side Orders">
-		<item name = "Onion Rings">
+	<category name = "side_orders">
+		<item name = "onion_rings">
 			<price size = "small">2.60</price>
 			<price size = "large">2.95</price>
 		</item>
-		<item name = "French Fries">
+		<item name = "french_fries">
 			<price size = "small">2.25</price>
 			<price size = "large">2.65</price>
 		</item>
-		<item name = "Spicy Fries">
+		<item name = "spicy_fries">
 			<price size = "small">2.60</price>
 			<price size = "large">2.95</price>
 		</item>
-		<item name="Chicken Wings">
+		<item name="chicken_wings">
 			<price>5.75</price>
 		</item>
-		<item name="Buffalo Wings">
+		<item name="buffalo_wings">
 			<price>5.75</price>
 		</item>
-		<item name="Chicken Fingers">
+		<item name="chicken_fingers">
 			<price>5.75</price>
 		</item>
-		<item name="Mozzarella Sticks">
+		<item name="mozzarella_sticks">
 			 <price>4.50</price>
 		</item>
-		<item name="Slice Cheese Pizza">
+		<item name="slice_cheese_pizza">
 			 <price>1.65</price>
 		</item>
-		<item name="Slice Pepperoni Pizza">
+		<item name="slice_pepperoni_pizza">
 			 <price>1.85</price>
 		</item>
-		<item name="Home made Spinach Pie">
+		<item name="home_made_spinach_pie">
 			 <price>3.10</price>
 		</item>
-		<item name="Buffalo Fingers">
+		<item name="buffalo_fingers">
 			 <price>5.75</price>
 		</item>
-		<item name="Chicken Burger">
+		<item name="chicken_burger">
 			 <price>2.75</price>
 		</item>
-		<item name="Cheese Burger">
+		<item name="cheese_burger">
 			 <price>2.75</price>
 		</item>
-		<item name="Spanakopita">
+		<item name="spanakopita">
 			 <price>3.25</price>
 		</item>
 	</category>
 	<category name = "Salads">
-		<item name = "Garden">
+		<item name = "garden_salad">
 			<price size="small">3.50</price>
 			<price size="large">4.50</price>
 		</item>
-		<item name = "Greek">
+		<item name = "greek">
 			<price size="small">4.50</price>
 			<price size="large">5.50</price>
 		</item>
@@ -237,158 +240,154 @@
 		</item>
 	</category>
 	<category name="Homemade Calzones">
-		<item name="Vegetarian"><price>7.35</price></item>
-		<item name="Sausage"><price>7.35</price></item>
-		<item name="Ham Cheese"><price>7.35</price></item>
-		<item name="Chicken Cutlet"><price>7.35</price></item>
-		<item name="Grilled Chicken"><price>7.35</price></item>
-		<item name="Meatball"><price>7.35</price></item>
-		<item name="Grecian"><price>7.35</price></item>
-		<item name="Veal"><price>7.35</price></item>
-		<item name="Eggplant"><price>7.35</price></item>
-		<item name="Steak"><price>7.35</price></item>
-		<item name="Italian"><price>7.35</price></item>
-		<item name="Grecian"><price>7.35</price></item>
+		<item name="vegetarian"><price>7.35</price></item>
+		<item name="sausage"><price>7.35</price></item>
+		<item name="ham_cheese"><price>7.35</price></item>
+		<item name="chicken_cutlet"><price>7.35</price></item>
+		<item name="grilled_chicken"><price>7.35</price></item>
+		<item name="meatball"><price>7.35</price></item>
+		<item name="grecian"><price>7.35</price></item>
+		<item name="veal"><price>7.35</price></item>
+		<item name="eggplant"><price>7.35</price></item>
+		<item name="steak"><price>7.35</price></item>
+		<item name="italian"><price>7.35</price></item>
+		<item name="grecian"><price>7.35</price></item>
 	</category>
 	<category name = "Wraps">
-		<item name="Turkey Club"><price>4.95</price></item>
-		<item name="Chicken Cobb"><price>4.95</price></item>
-		<item name="Greek Supreme"><price>4.95</price></item>
-		<item name="Crispy Chicken"><price>4.95</price></item>
-		<item name="Steak"></item>
+		<item name="turkey_club"><price>4.95</price></item>
+		<item name="chicken_cobb"><price>4.95</price></item>
+		<item name="greek_supreme"><price>4.95</price></item>
+		<item name="crispy_chicken"><price>4.95</price></item>
+		<item name="steak"></item>
 	</category>
 	<category name="Grinders">
-		<item name = "Meatless">
+		<item name = "meatless">
 			<price size="small">4.50</price>
 			<price size="large">4.95</price>
 		</item>
-		<item name = "Hamburger">
+		<item name = "hamburger">
 			<price size="small">4.50</price>
 			<price size="large">4.95</price>
 		</item>
-		<item name = "Cheeseburger">
+		<item name = "cheeseburger">
 			<price size="small">4.50</price>
 			<price size="large">4.95</price>
 		</item>
-		<item name = "Meatball">
+		<item name = "meatball">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Meatball">
+		<item name = "sausage">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Sausage">
+		<item name = "amerian">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Amerian">
+		<item name = "veal_cutlet">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Veal Cutlet">
-			<price size="small">4.75</price>
-			<price size="large">5.75</price>
-		</item>
-		<item name = "Hot Pastrami">
+		<item name = "hot_pastrami">
 			<price size="small">4.95</price>
 			<price size="large">5.95</price>
 		</item>
-		<item name = "Italian">
+		<item name = "italian">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Genoa Salami">
+		<item name = "genoa_salami">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Ham">
+		<item name = "ham">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Tuna">
+		<item name = "tuna">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Roat Beef">
+		<item name = "roat_beef">
 			<price size="small">4.95</price>
 			<price size="large">5.95</price>
 		</item>
-		<item name = "B.l.t">
+		<item name = "b.l.t">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Sliced Turkey">
+		<item name = "sliced_turkey">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Three Aces Special">
+		<item name = "three_aces_special">
 			<price size="small">5.30</price>
 			<price size="large">6.40</price>
 		</item>
-		<item name = "Cheese Steak">
+		<item name = "cheese_steak">
 			<price size="small">5.10</price>
 			<price size="large">6.0</price>
 		</item>
-		<item name = "Onion Steak">
+		<item name = "onion_steak">
 			<price size="small">5.20</price>
 			<price size="large">6.20</price>
 		</item>
-		<item name = "Pepper Steak">
+		<item name = "pepper_steak">
 			<price size="small">5.20</price>
 			<price size="large">6.20</price>
 		</item>
-		<item name = "Meatball">
+		<item name = "meatball">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Mushroom Steak">
+		<item name = "mushroom_steak">
 			<price size="small">5.20</price>
 			<price size="large">6.20</price>
 		</item>
-		<item name = "Special Steak">
+		<item name = "special_steak">
 			<price size="small">5.40</price>
 			<price size="large">6.40</price>
 		</item>
-		<item name = "Steak Bomb">
+		<item name = "steak_bomb">
 			<price size="small">5.50</price>
 			<price size="large">6.40</price>
 		</item>
-		<item name = "Pepper Egg">
+		<item name = "pepper_egg">
 			<price size="small">4.50</price>
 			<price size="large">4.95</price>
 		</item>
-		<item name = "Ham Egg">
+		<item name = "ham_egg">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Steak Egg">
+		<item name = "steak_egg">
 			<price size="small">5.60</price>
 			<price size="large">6.50</price>
 		</item>
-		<item name = "Bacon Egg">
+		<item name = "bacon_egg">
 			<price size="small">5.30</price>
 			<price size="large">6.40</price>
 		</item>
-		<item name = "Chicken Cutlet">
+		<item name = "chicken_cutlet">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Eggplant Cheese">
+		<item name = "eggplant_cheese">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Gyro on Pita"><price>5.50</price></item>
-		<item name = "Grilled Chicken on Pita"><price>5.25</price></item>
-		<item name = "Grilled Chicken Delight">
+		<item name = "gyro_on_pita"><price>5.50</price></item>
+		<item name = "grilled_chicken_on_pita"><price>5.25</price></item>
+		<item name = "grilled_chicken_delight">
 			<price size="small">4.75</price>
 			<price size="large">5.75</price>
 		</item>
-		<item name = "Grilled Chicken Sub">
+		<item name = "grilled_chicken_sub">
 			<price size="small">5.25</price>
 			<price size="large">5.85</price>
 		</item>
-		<item name = "Chicken Finger Sub">
+		<item name = "chicken_finger_sub">
 			<price size="small">4.60</price>
 			<price size="large">5.60</price>
 		</item>

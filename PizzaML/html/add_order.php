@@ -23,12 +23,20 @@ Please place your order.<br>
 		echo "</td>";
 		echo "</tr>";
 		echo "<tr>";
+		echo "<td>Add cheese: </td>";
+		echo "<td>";
+		$cheese_select = "<select name=\"extra_cheese\">";
+		$cheese_select .= "<option value=\"yes\">Yes</option>";
+		$cheese_select .= "<option value=\"no\">No</option>";
+		$cheese_select .= "</select>";
+		echo $cheese_select;
+		echo "</td>";
+		echo "<tr>";
 		echo "<td colspan=\"4\" align=\"center\"><button name=\"checkout\" type=\"submit\" value=$item>Checkout</button></td>";
 		echo "</tr>";
 		echo "</table>";
 		echo "</form>";						
 	}
-?> 
-
+?>
 
 </html>
