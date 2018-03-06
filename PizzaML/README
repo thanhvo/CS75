@@ -1,17 +1,6 @@
-mvc/5/README
+Build a website for ordering pizzas from a local restaurant. The website
+should have the following functionalities.
 
-David J. Malan
-malan@harvard.edu
-
-Improves upon mvc/4 by isolating web-accessible content in its own subdirectory.
-
-html/
- index.php - homepage for the course
- lecture0.php - a lecture
- lecture1.php - a lecture
- lectures.php - a list of lectures
-includes/
- helpers.php - helper functions
-templates/
- footer.php - pages' footer
- header.php - pages' header
+- Show the menu to the customers.
+- Allow customers to order the pizzas with all types, sizes and quantities.
+- Show the cost of orders when the customers check out.  
